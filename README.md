@@ -15,7 +15,7 @@ complete removal of "skills" and the reliance on ability scores for all dice rol
 many instance variables, and most of them would go unused so it was easier to just cut them and use the ability scores by themselves.
   
 **NPC Class -**  
-The NPC class is used to instantiate a generic non-player character object that has much more generic information for its default constructor and could be used in 
+The NPC class is used to create a generic non-player character object that has much more generic information for its default constructor and could be used in 
 the future to create more average generic unnamed NPCs more frequently but can also be used to create unique characters in a scene without having to create an entirely 
 new class that inherits from it. However, usually the NPC class is used to inherit information that is then used by more specific characters like the MainCharacter for 
 example.
@@ -39,7 +39,7 @@ properly. The Shoot function also decreases the targets health by a much larger 
 **Conversation Selection Helper Methods -**
 To help keep the main method from becoming to cluttered and hard to parse, the various parts of each conversation were broken up into various helper methods 
 contained within a class called "conversation selection" and each of these methods primarily consist of prompts for user input, checks against the MainCharacter's 
-ability scores, and player feedback on the results of said checks. This allows the main method to primarily be cleaned up to just the initial instantiation of all 
+ability scores, and player feedback on the results of said checks. This allows the main method to primarily be cleaned up to just the initial creation of all 
 objects that exist for the entire lifetime of the scene, as well as the initial prompts for user input.
   
 **Results and Some Thoughts Going Forward -**
