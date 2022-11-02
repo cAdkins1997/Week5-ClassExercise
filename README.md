@@ -24,7 +24,7 @@ example.
 The MainCharacter (referred to in game as "Hobo Cop") class inherits from the NPC class and as the name suggests represents the character that the player actually 
 "plays". The MainCharacter class is mostly very similar to the NPC class however it also has various methods it can use to act on the world, that the more generic NPC 
 superclass does not possess. These methods are the "move" and the "punch" methods. The Move method simply changes the x and y values of the location coordinates array 
-within the MainCharacter class. The Punch methods takes and target, gets its health instance variable, and then lowers it by a value multiplied by the MainCharacter's 
+within the MainCharacter class. The Punch methods takes a target, gets its health instance variable, and then lowers it by a value multiplied by the MainCharacter's 
 Strength ability score.
 
 **Item Class and KimsGun -**
@@ -43,7 +43,7 @@ ability scores, and player feedback on the results of said checks. This allows t
 objects that exist for the entire lifetime of the scene, as well as the initial prompts for user input.
   
 **Results and Some Thoughts Going Forward -**
-This result of this project shows how a very simple text game can be made with very little extra effort using all the principles of object-oriented programming. In 
+The result of this project shows how a very simple text game can be made with very little extra effort using all the principles of object-oriented programming. In 
 working on this project, I learned an even greater deal from the efforts I made in utilizing helper methods to help make the code base more readable. Prior to breaking 
 up the code related to conversation into its own class of helper methods, the project itself was borderline unreadable and unworkable. By utilizing helper methods 
 wherever I could I was able to make the project's codebase readable and much easier to iterate on. In the future if I or anyone ever wanted to make this into a full 
